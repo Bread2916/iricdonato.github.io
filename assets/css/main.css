@@ -1091,9 +1091,20 @@ section,
 }
 
 .about .timeline-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 180px; /* Adjust based on the tallest timeline block */
+  justify-content: flex-start;
+  padding-left: 26px;
+}
+
+.about .timeline-item .dot {
+  position: absolute;
+  left: 0;
+  top: 0; /* Start at very top of the item */
+  transform: translateY(0); /* Remove any offset */
 }
 
 .about .timeline-item time {
