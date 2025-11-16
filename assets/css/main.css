@@ -1091,8 +1091,9 @@ section,
 }
 
 .about .timeline-item {
-  position: relative;
-  padding-left: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about .timeline-item time {
