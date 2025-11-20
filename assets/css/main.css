@@ -87,6 +87,34 @@ h6 {
   font-family: var(--heading-font);
 }
 
+/* Themed Button */
+.themed-btn {
+  background: #0d6efd;              /* Bootstrap primary but slightly richer */
+  border: none;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;              /* Rounded-pill aesthetic */
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+.themed-btn:hover {
+  background: #0a58ca;              /* Darker blue on hover */
+  box-shadow: 0 6px 16px rgba(13, 110, 253, 0.45);
+  transform: translateY(-2px);
+}
+
+.themed-btn i {
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+.themed-btn:hover i {
+  transform: translateX(4px);
+}
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
