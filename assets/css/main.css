@@ -60,6 +60,10 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+window.addEventListener('wheel', function(e) {
+    e.preventDefault();
+}, { passive: false });
+
 body {
     overflow: hidden;
 }
