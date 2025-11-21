@@ -61,6 +61,10 @@
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 body {
+    overflow: hidden;
+}
+
+body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
