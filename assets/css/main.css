@@ -181,6 +181,21 @@ h6 {
   }
 }
 
+html, body {
+    overflow: hidden !important;
+    height: 100% !important;
+}
+
+#hero {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#hero .container,
+#hero .row {
+    height: 100%;
+}
+  
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
