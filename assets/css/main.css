@@ -2963,3 +2963,38 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+  /* Make each portfolio card big enough to hold images */
+.portfolio-card {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-card img.portfolio-img {
+  width: 100%;
+  max-height: 350px; /* Adjust height for bigger images */
+  object-fit: cover; /* Ensures image fills container without distortion */
+  border-radius: 10px;
+}
+
+.portfolio-info h4 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.portfolio-info p {
+  margin: 5px 0 0 0;
+  color: #555;
+}
+
+/* Optional: Adjust for smaller screens */
+@media (max-width: 768px) {
+  .portfolio-card img.portfolio-img {
+    max-height: 300px;
+  }
+}
