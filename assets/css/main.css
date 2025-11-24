@@ -60,6 +60,42 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+/* ===== Services Page: Remove dead space per block ===== */
+body.services-page .services .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body.services-page .services .row {
+    margin-left: 0;
+    margin-right: 0;
+    gap: 1rem; /* reduce spacing between columns; default Bootstrap gutter is ~1.5rem */
+}
+
+body.services-page .col-md-6 {
+    padding-left: 0.5rem;   /* reduce horizontal spacing between blocks */
+    padding-right: 0.5rem;
+}
+
+body.services-page .service-item {
+    margin-bottom: 1rem;   /* reduce vertical space between blocks */
+    padding: 15px;          /* optional: keeps internal padding */
+    box-sizing: border-box;
+}
+
+body.services-page .service-content {
+    margin-top: 0;
+    margin-bottom: 0;       /* remove extra margins inside each block */
+}
+
+/* Optional: tighten headings and lists inside blocks */
+body.services-page .service-content h5,
+body.services-page .service-content ul,
+body.services-page .service-content li {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
 window.addEventListener('wheel', function(e) {
     e.preventDefault();
 }, { passive: false });
