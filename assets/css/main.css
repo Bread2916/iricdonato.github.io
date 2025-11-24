@@ -64,9 +64,30 @@ window.addEventListener('wheel', function(e) {
     e.preventDefault();
 }, { passive: false });
 
-/* Make the services page container smaller */
-.services-small .container {
-  max-width: 750px;   /* adjust size here */
+/* Services (Achievements) Page — Container Override */
+.services-page .container {
+  max-width: 850px !important;    /* adjust value to make it smaller or bigger */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* If you have nested containers, apply rule there too */
+.services-page .container .container {
+  max-width: 850px !important;
+}
+
+/* Optional: style rows/columns inside services to center content more */
+.services-page .row {
+  justify-content: center;
+}
+
+/* Optional: control width of service items/cards to avoid overflow or weird wrapping */
+.services-page .service-item {
+  max-width: 100%; /* ensures they don’t grow too much */
+}
+  
 }
 
   
@@ -85,12 +106,6 @@ body {
 .button-nav-container {
   width: 100%;
   padding: 0 15px; /* same padding as Bootstrap containers */
-}
-
-.services-small .container,
-.services-small .container .container,
-.services-small .container .container .container {
-  max-width: 850px !important;
 }
 
 }
