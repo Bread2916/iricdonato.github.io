@@ -81,10 +81,8 @@ body {
   padding: 0 15px; /* same padding as Bootstrap containers */
 }
 
-.services-small .container,
-.services-small .container .container,
-.services-small .container .container .container {
-  max-width: 850px !important;
+.services-page .container {
+  max-width: 700px !important;
 }
 
 }
