@@ -63,71 +63,7 @@
 window.addEventListener('wheel', function(e) {
     e.preventDefault();
 }, { passive: false });
-  
-/* Center and scale the main page */
-body.services-page {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-  background-color: #f9f9f9; /* optional page background */
-}
 
-body.services-page .main {
-  transform: scale(0.7); /* scale everything to 70% */
-  transform-origin: top center; /* scale relative to top center */
-  width: 100%;
-  max-width: 1000px; /* optional: keep a max width for readability */
-  margin: 0 auto;
-  padding: 15px;
-  box-sizing: border-box;
-}
-
-/* Container adjustment */
-.services-page .container {
-  width: 100%;
-  height: auto;
-}
-
-/* Row alignment */
-.services-page .row {
-  display: flex;
-  flex-wrap: wrap;   /* wrap items if necessary */
-  justify-content: center;
-  gap: 20px;
-}
-
-/* Individual service items */
-.services-page .service-item {
-  flex: 1 1 300px;
-  max-width: 100%;
-  padding: 15px;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  background: #fff;  /* optional card style */
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-/* Headings and lists */
-.services-page h2 {
-  font-size: 1.12rem; /* 70% of 1.6rem */
-  margin-bottom: 10px;
-}
-
-.services-page h3 {
-  font-size: 0.84rem; /* 70% of 1.2rem */
-  margin-bottom: 8px;
-}
-
-.services-page ul {
-  font-size: 0.63rem; /* 70% of 0.9rem */
-  padding-left: 20px;
-}
-
-.services-page .service-icon i {
-  font-size: 1.05rem; /* 70% of 1.5rem */
-}
-  
 body {
     overflow: hidden;
 }
