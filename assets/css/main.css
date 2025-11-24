@@ -64,9 +64,10 @@ window.addEventListener('wheel', function(e) {
     e.preventDefault();
 }, { passive: false });
 
-  /* Make services page container slightly smaller */
+/* Make the services page container smaller */
 .services-small .container {
-    max-width: 900px; /* default is around 1140px */
+  max-width: 750px;   /* adjust size here */
+}
 
   
 }
