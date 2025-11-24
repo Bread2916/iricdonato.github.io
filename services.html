@@ -27,6 +27,15 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Custom CSS for services page size -->
+  <style>
+    body.services-page .main {
+      max-width: 1000px; /* Adjust page width */
+      margin: 0 auto; /* Center page */
+      padding: 20px; /* Optional padding */
+    }
+  </style>
+
 </head>
 
 <body class="services-page">
@@ -34,7 +43,6 @@
   <!-- Header -->
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -50,14 +58,13 @@
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
-
     </div>
   </header>
 
   <main class="main">
 
     <!-- Services Section -->
-   <section id="services" class="services section services-small">
+    <section id="services" class="services section services-small">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -66,109 +73,94 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row justify-content-center g-5">
-
-          <!-- Co-Curricular Title -->
-          <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-  <div class="row text-center mb-4">
-    <!-- Co-Curricular Title -->
-    <div class="col-md-6" data-aos="fade-up" data-aos-delay="50">
-      <h3 class="subsection-title">Co-Curricular</h3>
-    </div>
-
-    <!-- Extra-Curricular Title -->
-    <div class="col-md-6" data-aos="fade-up" data-aos-delay="50">
-      <h3 class="subsection-title">Extracurricular</h3>
-    </div>
-  </div>
-
-  <div class="row g-5">
-
-    <!-- Academic Awards under Co-Curricular -->
-    <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-      <div class="service-item">
-        <div class="service-icon">
-          <i class="bi bi-award-fill"></i>
+        <!-- Subsection Titles -->
+        <div class="row text-center mb-4">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="50">
+            <h3 class="subsection-title">Co-Curricular</h3>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="50">
+            <h3 class="subsection-title">Extracurricular</h3>
+          </div>
         </div>
-        <div class="service-content">
-          <h3>Academic Awards</h3>
-          <ul class="text-start">
-            <li>Graduated Top 13 in STEM with High Honors</li>
-            <li>Best in Research (SHS)</li>
-            <li>Best in Mathematics (JHS)</li>
-            <li>Consistent Honoris Damus Student</li>
-          </ul>
-        <a href="https://github.com/Bread2916/iricdonato.github.io/blob/main/assets/img/profile/research-award.jpg?raw=true" class="glightbox">
-            <span>Learn More</span>
-            <i class="bi bi-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
 
-    <!-- Competitions under Extra-Curricular -->
-    <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-      <div class="service-item">
-        <div class="service-icon">
-          <i class="bi bi-trophy"></i>
-        </div>
-        <div class="service-content">
-          <h3>Competitions and Accomplishments</h3>
-           <ul class="text-start">
-            <li>UNESCO Accredited for Student Parliamentary Government (2024-2025)</li>
-             <li>MTAP 2015 (1st Place)</li>
-             <li>Hong Kong International Math Olympiad Merit Awardee (2024)</li>
-          </ul>
-          <a href="https://ubaguio.edu/ub-science-high-schools-student-parliamentary-government-officially-recognized-as-a-unesco-club/" class="Unesco Link">
-            <span>Learn More</span>
-            <i class="bi bi-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+        <!-- Services Grid -->
+        <div class="row g-5">
 
-    <!-- Notable Roles -->
-    <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
-      <div class="service-item">
-        <div class="service-icon">
-          <i class="bi bi-journal-bookmark-fill"></i>
-        </div>
-        <div class="service-content">
-          <h3>Notable Roles and Awards</h3>
-           <ul class="text-start">
-            <li>External Affairs Minister for the Student Parliamentary Government (2024 - 2025)</li>
-            <li>Peach Team Leader for Youth Development Training (2025)</li>
-           </ul>
-          <a href="https://github.com/Bread2916/iricdonato.github.io/blob/main/assets/img/profile/external-affairs.png?raw=true" class="minister photo">
-            <span>Learn More</span>
-            <i class="bi bi-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+          <!-- Academic Awards -->
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="service-item">
+              <div class="service-icon"><i class="bi bi-award-fill"></i></div>
+              <div class="service-content">
+                <h3>Academic Awards</h3>
+                <ul class="text-start">
+                  <li>Graduated Top 13 in STEM with High Honors</li>
+                  <li>Best in Research (SHS)</li>
+                  <li>Best in Mathematics (JHS)</li>
+                  <li>Consistent Honoris Damus Student</li>
+                </ul>
+                <a href="https://github.com/Bread2916/iricdonato.github.io/blob/main/assets/img/profile/research-award.jpg?raw=true" class="glightbox">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-    <!-- Outreach -->
-    <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
-      <div class="service-item">
-        <div class="service-icon">
-          <i class="bi bi-person-heart"></i>
-        </div>
-        <div class="service-content">
-          <h3>Outreach</h3>
-          <li>S.P.A.C.E.S Project for San Luis Village (2024-2025)</li>
-          <li>Head Organizer for MIL seminar in Adiwang Elementary School (2024)</li>
-          <li>School-Wide Book Donation Drive (2025)</li>
-          <a href="https://ubaguio.edu/spg-and-gsp-turn-over-donations-for-s-p-a-c-e-s-project-in-san-luis-village/" class="service-link">
-            <span>Learn More</span>
-            <i class="bi bi-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+          <!-- Competitions -->
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="service-item">
+              <div class="service-icon"><i class="bi bi-trophy"></i></div>
+              <div class="service-content">
+                <h3>Competitions and Accomplishments</h3>
+                <ul class="text-start">
+                  <li>UNESCO Accredited for Student Parliamentary Government (2024-2025)</li>
+                  <li>MTAP 2015 (1st Place)</li>
+                  <li>Hong Kong International Math Olympiad Merit Awardee (2024)</li>
+                </ul>
+                <a href="https://ubaguio.edu/ub-science-high-schools-student-parliamentary-government-officially-recognized-as-a-unesco-club/" class="Unesco Link">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-  </div>
-</div>
+          <!-- Notable Roles -->
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon"><i class="bi bi-journal-bookmark-fill"></i></div>
+              <div class="service-content">
+                <h3>Notable Roles and Awards</h3>
+                <ul class="text-start">
+                  <li>External Affairs Minister for the Student Parliamentary Government (2024 - 2025)</li>
+                  <li>Peach Team Leader for Youth Development Training (2025)</li>
+                </ul>
+                <a href="https://github.com/Bread2916/iricdonato.github.io/blob/main/assets/img/profile/external-affairs.png?raw=true" class="minister photo">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outreach -->
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon"><i class="bi bi-person-heart"></i></div>
+              <div class="service-content">
+                <h3>Outreach</h3>
+                <ul class="text-start">
+                  <li>S.P.A.C.E.S Project for San Luis Village (2024-2025)</li>
+                  <li>Head Organizer for MIL seminar in Adiwang Elementary School (2024)</li>
+                  <li>School-Wide Book Donation Drive (2025)</li>
+                </ul>
+                <a href="https://ubaguio.edu/spg-and-gsp-turn-over-donations-for-s-p-a-c-e-s-project-in-san-luis-village/" class="service-link">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
         </div><!-- End Row -->
 
