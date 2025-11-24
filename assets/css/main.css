@@ -63,10 +63,7 @@
 window.addEventListener('wheel', function(e) {
     e.preventDefault();
 }, { passive: false });
-
-  /* Make services page container slightly smaller */
-.services-small .container {
-    max-width: 900px; /* default is around 1140px */
+  
 }
 
 body {
@@ -2926,4 +2923,41 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/* ===== Services Page Resizing ===== */
+body.services-page main {
+    max-width: 70%;       /* shrink page width to 70% */
+    margin: 0 auto;       /* center the content */
+    padding: 20px 0;      /* optional padding top/bottom */
+    box-sizing: border-box;
+}
+
+/* Make sections responsive inside the services page */
+body.services-page .services .container,
+body.services-page .services .row,
+body.services-page .service-item {
+    width: 100%;          /* ensures elements fill the resized container */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Optional: adjust text sizes slightly for narrower layout */
+body.services-page h2,
+body.services-page h3,
+body.services-page p,
+body.services-page li {
+    font-size: 0.95em;
+}
+
+/* Optional: resize icons inside service items */
+body.services-page .service-icon i {
+    font-size: 2.5rem;    /* adjust if icons are too big for smaller page */
+}
+
+/* Optional: make links and buttons scale nicely */
+body.services-page a,
+body.services-page .service-link,
+body.services-page .glightbox span {
+    font-size: 0.95em;
 }
