@@ -2938,14 +2938,14 @@ section,
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 250px;           /* smaller card width */
+  max-width: 270px;           /* smaller card width */
   margin: 0 auto;             /* center the cards */
 }
 
 /* Make the images smaller */
 .portfolio-card img.portfolio-img {
-  width: 70%;                 /* smaller image width */
-  max-height: 200px;          /* shorter height */
+  width: 80%;                 /* smaller image width */
+  max-height: 240px;          /* shorter height */
   object-fit: cover;          /* keeps image shape clean */
   border-radius: 10px;
   display: block;
