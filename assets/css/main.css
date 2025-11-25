@@ -2974,7 +2974,7 @@ section,
 
 /* Titles and paragraphs */
 .portfolio-info h4 {
-  margin: 0 0 8px 0;
+ margin-bottom: 16px; /* bigger gap */
   font-size: 1.2rem;
 }
 
