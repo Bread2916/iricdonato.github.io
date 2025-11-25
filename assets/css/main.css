@@ -3051,3 +3051,19 @@ section,
     justify-content: center;
   }
 }
+
+   /* ======== BUTTS ================================================== */
+.button-nav-container {
+  position: absolute;       /* position relative to the nearest positioned ancestor */
+  bottom: 20px;             /* distance from bottom of viewport or container */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;          /* horizontal gap from left & right borders */
+  z-index: 1000;            /* make sure buttons are on top of content */
+}
+
+.button-nav-container .btn {
+  min-width: 100px;         /* optional: make buttons uniform size */
+}
