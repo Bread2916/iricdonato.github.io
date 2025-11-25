@@ -2938,15 +2938,15 @@ section,
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 410px;           /* ⬆ wider */
+  max-width: 410px;
   margin: 0 auto;
 }
 
-/* Wider image, short height */
+/* Square or Tall Image */
 .portfolio-card img.portfolio-img {
   width: 100%;
-  aspect-ratio: 1 / 1;       /* ⬅ makes it wide but not tall */
-  object-fit: cover;          /* keeps the image cropped clean */
+  aspect-ratio: 3 / 4;     /* <— change this to 3/4 or 2/3 for taller */
+  object-fit: cover;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
@@ -2963,29 +2963,13 @@ section,
   color: #555;
 }
 
-/* Optional: Adjust for smaller screens */
+/* Mobile: keep it square too */
 @media (max-width: 768px) {
   .portfolio-card {
-    max-width: 320px;         /* slightly smaller on mobile */
+    max-width: 320px;
   }
 
   .portfolio-card img.portfolio-img {
-    aspect-ratio: 16 / 9;     /* mobile-friendly aspect ratio */
+    aspect-ratio: 3 / 4;
   }
-}
-
-  /*BUTTS = = = = = == = = = = = == = = =*/
-.bottom-nav-buttons {
-  position: relative;     
-  width: 100%;
-  margin-top: 40px;       /* spacing above the buttons */
-  padding: 0 40px 40px;   /* left & right padding from borders */
-  display: flex;
-  justify-content: space-between; /* left button to far left, right button to far right */
-}
-
-/* Individual button styling */
-.bottom-nav-buttons .btn {
-  padding: 10px 20px;
-  font-size: 1rem;
 }
