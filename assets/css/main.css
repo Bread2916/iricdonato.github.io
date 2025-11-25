@@ -2954,8 +2954,15 @@ section,
 
 /* Text styles */
 .portfolio-info h4 {
-  margin-top: 10px;
-  font-size: 1.2rem;
+  margin: 0 0 32px 0;    /* Large space below h4 */
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.portfolio-info p {
+  margin: 0;
+  color: #555;
+  line-height: 1.3;
 }
 
 .portfolio-info p {
