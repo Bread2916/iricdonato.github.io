@@ -2992,17 +2992,17 @@ section,
   gap: 16px;
   align-items: center;
   background: #f8f8f8;
-  padding: 12px;
+  padding: 16px;
   border-radius: 12px;
-  max-width: 360px;          /* overall card width */
-  min-width: 320px;          /* keeps layout stable when scrolling */
+  max-width: 450px;          /* overall card width ================================================================*/
+  min-width: 380px;          /* keeps layout stable when scrolling */
   box-sizing: border-box;
 }
 
 /* fixed image column */
 .portfolio-card img.portfolio-img {
-  width: 120px;              /* control how wide image is */
-  height: 120px;             /* square */
+  width: 160px;              /* control how wide image is */
+  height: 200px;             /* square */
   object-fit: cover;
   border-radius: 10px;
   flex: 0 0 auto;            /* don't grow or shrink */
