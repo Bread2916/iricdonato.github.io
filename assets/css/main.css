@@ -3001,8 +3001,8 @@ section,
   background: #f8f8f8;
   padding: 16px;
   border-radius: 12px;
-  max-width: 450px;          /* overall card width ================================================================*/
-  min-width: 380px;          /* keeps layout stable when scrolling */
+  max-width: 600px;          /* overall card width ================================================================*/
+  min-width: 500px;          /* keeps layout stable when scrolling */
   box-sizing: border-box;
 }
 
