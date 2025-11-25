@@ -2944,7 +2944,7 @@ section,
 
 /* Make the images smaller */
 .portfolio-card img.portfolio-img {
-  width: 80%;                 /* smaller image width */
+  width: 100%;                 /* smaller image width */
   max-height: 240px;          /* shorter height */
   object-fit: cover;          /* keeps image shape clean */
   border-radius: 10px;
