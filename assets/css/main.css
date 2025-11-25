@@ -2965,23 +2965,43 @@ section,
   display: block;
 }
 
-/* Text column fills remaining space */
+/* ======== H4 AND P ======== */
 .portfolio-info {
-  flex: 1 1 auto;
+  flex: 1 1 auto;       /* text fills remaining space */
   text-align: left;
   padding-right: 16px;
 }
 
-/* Titles and paragraphs */
+/* Headings inside card */
 .portfolio-info h4 {
- margin-bottom: 16px; /* bigger gap */
   font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 12px 0;    /* bottom margin sets gap to paragraph */
+  color: var(--heading-color, #222);
 }
 
+/* Paragraphs inside card */
 .portfolio-info p {
-  margin: 0;
-  color: #555;
+  font-size: 0.95rem;
+  color: var(--default-color, #555);
+  margin: 0;              /* no extra margin, rely on h4 margin */
   line-height: 1.4;
+}
+
+/* Optional: if you have tags inside text */
+.portfolio-info .portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;       /* small spacing above tags */
+}
+
+.portfolio-info .portfolio-tags span {
+  font-size: 0.8rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background-color: color-mix(in srgb, var(--accent-color, #007bff), transparent 90%);
+  color: var(--accent-color, #007bff);
 }
 
 /* ====== Mobile: stack image above text ====== */
