@@ -2938,7 +2938,7 @@ section,
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 450px;           /* ⬆ wider */
+  max-width: 410px;           /* ⬆ wider */
   margin: 0 auto;
 }
 
@@ -2972,4 +2972,28 @@ section,
   .portfolio-card img.portfolio-img {
     aspect-ratio: 16 / 9;     /* mobile-friendly aspect ratio */
   }
+}
+
+/* NAVIGATION BUTTONS == = = = == = = = = = ==  */
+.bottom-nav-buttons {
+  position: fixed;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Bottom-left button */
+.nav-btn-bottom-left {
+  position: absolute;
+  left: 60px;   /* distance from left border */
+  pointer-events: auto;
+}
+
+/* Bottom-right button */
+.nav-btn-bottom-right {
+  position: absolute;
+  right: 60px; /* distance from right border */
+  pointer-events: auto;
 }
