@@ -2973,3 +2973,19 @@ section,
     aspect-ratio: 16 / 9;     /* mobile-friendly aspect ratio */
   }
 }
+
+  /*BUTTS = = = = = == = = = = = == = = =*/
+.bottom-nav-buttons {
+  position: relative;     
+  width: 100%;
+  margin-top: 40px;       /* spacing above the buttons */
+  padding: 0 40px 40px;   /* left & right padding from borders */
+  display: flex;
+  justify-content: space-between; /* left button to far left, right button to far right */
+}
+
+/* Individual button styling */
+.bottom-nav-buttons .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
