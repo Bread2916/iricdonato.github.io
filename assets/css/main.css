@@ -3001,8 +3001,8 @@ section,
 
 /* fixed image column */
 .portfolio-card img.portfolio-img {
-  width: 160px;              /* control how wide image is */
-  height: 200px;             /* square */
+  width: 220px;              /* control how wide image is */
+  height: 220px;             /* square */
   object-fit: cover;
   border-radius: 10px;
   flex: 0 0 auto;            /* don't grow or shrink */
