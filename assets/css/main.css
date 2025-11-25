@@ -2938,7 +2938,7 @@ section,
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 380px;           /* ⬆ wider */
+  max-width: 450px;           /* ⬆ wider */
   margin: 0 auto;
 }
 
