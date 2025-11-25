@@ -2945,7 +2945,7 @@ section,
 /* Wider image, short height */
 .portfolio-card img.portfolio-img {
   width: 100%;
-  aspect-ratio: 16 / 7;       /* ⬅ makes it wide but not tall */
+  aspect-ratio: 1 / 1;       /* ⬅ makes it wide but not tall */
   object-fit: cover;          /* keeps the image cropped clean */
   border-radius: 10px;
   display: block;
