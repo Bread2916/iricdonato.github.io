@@ -2929,27 +2929,33 @@ section,
   /* Add your styles here */
 }
 
-  /* Make each portfolio card big enough to hold images */
+/* Make each portfolio card smaller but still able to hold images */
 .portfolio-card {
   background: #f8f8f8;
-  padding: 15px;
+  padding: 10px;              /* smaller padding */
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 280px;           /* smaller card width */
+  margin: 0 auto;             /* center the cards */
 }
 
+/* Make the images smaller */
 .portfolio-card img.portfolio-img {
-  width: 100%;
-  max-height: 350px; /* Adjust height for bigger images */
-  object-fit: cover; /* Ensures image fills container without distortion */
+  width: 80%;                 /* smaller image width */
+  max-height: 220px;          /* shorter height */
+  object-fit: cover;          /* keeps image shape clean */
   border-radius: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
+/* Text styles */
 .portfolio-info h4 {
   margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .portfolio-info p {
@@ -2960,6 +2966,12 @@ section,
 /* Optional: Adjust for smaller screens */
 @media (max-width: 768px) {
   .portfolio-card img.portfolio-img {
-    max-height: 300px;
+    max-height: 180px;        /* reduced for mobile */
+    width: 85%;
+  }
+
+  .portfolio-card {
+    max-width: 240px;
   }
 }
+
