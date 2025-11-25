@@ -2944,8 +2944,8 @@ section,
 
 /* Square or Tall Image */
 .portfolio-card img.portfolio-img {
-  width: 100%;
-  aspect-ratio: 3 / 4;     /* <— change this to 3/4 or 2/3 for taller */
+  width: 85%;
+  aspect-ratio: 1 / 1;     /* <— change this to 3/4 or 2/3 for taller */
   object-fit: cover;
   border-radius: 10px;
   display: block;
@@ -2970,6 +2970,6 @@ section,
   }
 
   .portfolio-card img.portfolio-img {
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 1 / 1;
   }
 }
