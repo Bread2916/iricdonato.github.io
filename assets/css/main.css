@@ -3046,18 +3046,17 @@ section,
   min-width: 100px;         /* optional: make buttons uniform size */
 }
 
-/* =========== MY BATCHMATES ============ */
+  /* =========== MY BATCHMATES ============ */
 
-/* Make page look nice */
+/* Make apge look nice teehee = == = = = = = == */
 .people-layout {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-/* Photo styling (slightly reduced width so names have more room) */
+/* Photo styling */
 .people-photo {
   max-height: 300px;
-  width: 100%;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -3065,12 +3064,13 @@ section,
 
 /* Names container */
 .names-container {
-  background: #0E1A40;        /* recommended midnight blue (change if you like) */
-  padding: 22px 28px;
+  background: #050221;
+  max-width: 700px;   /* adjust width */
+  height: 350;       /* natural height (default) */
+  padding: 25px 30px;
   border-radius: 12px;
   border-left: 5px solid var(--accent-color, #4154f1);
-  width: 100%;
-  box-sizing: border-box;
+  /* Matches your theme's blue accent */
 }
 
 /* Title inside names */
@@ -3079,38 +3079,30 @@ section,
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 1.05rem;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  font-size: 1.2rem;
+  border-bottom: 2px solid #eee;
   padding-bottom: 8px;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
-/* 4-column name list with responsive fallbacks */
-.names-list-4col {
+/* 3-column name list */
+.names-list-3col {
   list-style: none;
   padding-left: 0;
   margin: 0;
-  columns: 4;              /* 4 columns on wide screens */
-  column-gap: 36px;
-  -webkit-column-break-inside: avoid;
-  -moz-column-break-inside: avoid;
-  column-break-inside: avoid;
+  columns: 3;            /* <-- creates 3 columns */
+  column-gap: 40px;
 }
 
-/* Make sure items don't break across columns awkwardly */
-.names-list-4col li {
-  break-inside: avoid;
-  -webkit-column-break-inside: avoid;
-  display: block;
-  margin-bottom: 8px;
-  font-size: 0.96rem;
-  color: #e6eef8;          /* light, readable on dark bg */
-  line-height: 1.3;
+.names-list-3col li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: 444;
 }
 
-/* Hover effect */
-.names-list-4col li:hover {
-  color: var(--accent-color, #ffb86b);  /* subtle warm accent on hover */
-  font-weight: 600;
-  transition: color 0.18s ease, font-weight 0.18s ease;
+/* Slight hover effect for better visual feel */
+.names-list-3col li:hover {
+  color: #ff8800;
+  font-weight: 500;
+  transition: 0.2s;
 }
