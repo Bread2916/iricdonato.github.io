@@ -3048,9 +3048,18 @@ section,
 
 /* =========== MY BATCHMATES ============ */
 
+/* Reduce gap between section title and names container */
+.section-title {
+  margin-bottom: 15px; /* default might be 30px or more */
+}
+
+.names-container {
+  margin-top: 0; /* ensures no extra top margin */
+}
+  
 /* Page layout spacing */
 .people-layout {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
