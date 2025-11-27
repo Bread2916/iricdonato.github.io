@@ -3065,7 +3065,7 @@ section,
 /* Names container */
 .names-container {
   background: var(--surface-color);
-  max-width: 1000px;   /* adjust width */
+  width: 1000px;   /* adjust width */
   height: 325px;       /* natural height (default) */
   padding: 25px 30px;
   border-radius: 12px;
