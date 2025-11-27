@@ -3045,3 +3045,38 @@ section,
 .button-nav-container .btn {
   min-width: 100px;         /* optional: make buttons uniform size */
 }
+
+  /* =========== MY BATCHMATES ============ */
+.left-photo-right-text {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Photo */
+.left-photo-right-text img {
+  max-height: 280px;     /* Keeps the section from being tall */
+  object-fit: cover;
+}
+
+/* Names box */
+.names-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-height: 300px;     /* Controls height so page stays compact */
+  overflow-y: auto;      /* Scroll only inside the box */
+}
+
+/* Names list styling */
+.names-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  columns: 2;            /* Makes the 40 names fit nicely */
+  column-gap: 40px;
+}
+
+.names-list li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
