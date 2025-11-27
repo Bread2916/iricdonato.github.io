@@ -3064,7 +3064,7 @@ section,
 
 /* Names container */
 .names-container {
-  background: #f8f8f8;
+  background: #736666;
   padding: 25px 30px;
   border-radius: 12px;
   border-left: 5px solid var(--accent-color, #4154f1);
@@ -3074,7 +3074,7 @@ section,
 /* Title inside names */
 .names-title {
   font-weight: 600;
-  color: #222;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1.2rem;
@@ -3100,7 +3100,7 @@ section,
 
 /* Slight hover effect for better visual feel */
 .names-list-3col li:hover {
-  color: var(--accent-color, #4154f1);
+  color: #ff8800;
   font-weight: 500;
   transition: 0.2s;
 }
