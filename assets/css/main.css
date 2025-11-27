@@ -3046,9 +3046,8 @@ section,
   min-width: 100px;         /* optional: make buttons uniform size */
 }
 
-  /* =========== MY BATCHMATES ============ */
+/* =========== MY BATCHMATES ============ */
 
-/* Make apge look nice teehee = == = = = = = == */
 .people-layout {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -3065,12 +3064,13 @@ section,
 /* Names container */
 .names-container {
   background: var(--surface-color);
-  width: 1000px;   /* adjust width */
-  height: 325px;       /* natural height (default) */
+  width: 100%;             /* stretches full width */
+  max-width: none;         /* removes the limit */
   padding: 25px 30px;
+  padding-right: 35px;     /* prevents touching right border */
   border-radius: 12px;
   border-left: 5px solid var(--accent-color, #4154f1);
-  /* Matches your theme's blue accent */
+  margin-right: 0;         /* ensures no gap on right */
 }
 
 /* Title inside names */
@@ -3085,23 +3085,22 @@ section,
   margin-bottom: 15px;
 }
 
-/* 3-column name list */
-.names-list-3col {
+/* 4-column version */
+.names-list-4col {
   list-style: none;
   padding-left: 0;
   margin: 0;
-  columns: 3;            /* <-- creates 3 columns */
+  columns: 4;            
   column-gap: 40px;
 }
 
-.names-list-3col li {
+.names-list-4col li {
   margin-bottom: 6px;
   font-size: 0.95rem;
-  color: 444;
+  color: #ddd;
 }
 
-/* Slight hover effect for better visual feel */
-.names-list-3col li:hover {
+.names-list-4col li:hover {
   color: #ff8800;
   font-weight: 500;
   transition: 0.2s;
