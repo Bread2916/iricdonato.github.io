@@ -3050,7 +3050,7 @@ section,
 
 /* Reduce gap between section title and names container */
 .section-title {
-  margin-bottom: 15px; /* default might be 30px or more */
+  margin-bottom: 5px; /* default might be 30px or more */
 }
 
 .names-container {
@@ -3060,7 +3060,7 @@ section,
 /* Page layout spacing */
 .people-layout {
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 /* Photo styling */
