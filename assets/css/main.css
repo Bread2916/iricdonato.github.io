@@ -3046,9 +3046,9 @@ section,
   min-width: 100px;         /* optional: make buttons uniform size */
 }
 
-  /* =========== MY BATCHMATES ============ */
+/* =========== MY BATCHMATES ============ */
 
-/* Make apge look nice teehee = == = = = = = == */
+/* Page layout spacing */
 .people-layout {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -3064,16 +3064,15 @@ section,
 
 /* Names container */
 .names-container {
-  background: color-mix(in srgb, var(--accent-color, #007bff), transparent 90%);
-  width: 900px;   /* adjust width */
-  height: 325px;       /* natural height (default) */
+  background: rgba(0, 123, 255, 0.1); /* subtle blue tint */
+  width: 100%;       /* container fills column width */
   padding: 25px 30px;
   border-radius: 12px;
-  border-left: 5px solid var(--accent-color, #4154f1);
-  /* Matches your theme's blue accent */
+  border-left: 5px solid var(--accent-color, #4154f1); /* blue accent border */
+  box-sizing: border-box;
 }
 
-/* Title inside names */
+/* Title inside names container */
 .names-title {
   font-weight: 600;
   color: #ffffff;
@@ -3085,24 +3084,28 @@ section,
   margin-bottom: 15px;
 }
 
-/* 3-column name list */
-.names-list-3col {
+/* Grid for names: 4 columns */
+.names-list-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 12px 20px; /* row gap | column gap */
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   margin: 0;
-  columns: 3;            /* <-- creates 3 columns */
-  column-gap: 40px;
 }
 
-.names-list-3col li {
-  margin-bottom: 6px;
+.names-list-grid li {
   font-size: 0.95rem;
-  color: 444;
+  color: #ffffff;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.05); /* subtle highlight for each name */
+  text-align: left;
 }
 
-/* Slight hover effect for better visual feel */
-.names-list-3col li:hover {
-  color: #ff8800;
+/* Hover effect */
+.names-list-grid li:hover {
+  color: #4a8ad4;
   font-weight: 500;
   transition: 0.2s;
 }
