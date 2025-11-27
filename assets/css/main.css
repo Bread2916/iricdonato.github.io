@@ -3075,7 +3075,7 @@ section,
 .names-container {
   background: rgba(0, 123, 255, 0.1); /* subtle blue tint */
   width: 100%;       /* container fills column width */
-  padding: 25px 30px;
+  padding: 15px 20px;
   border-radius: 12px;
   border-left: 5px solid var(--accent-color, #4154f1); /* blue accent border */
   box-sizing: border-box;
@@ -3089,15 +3089,15 @@ section,
   letter-spacing: 1px;
   font-size: 1.2rem;
   border-bottom: 2px solid #eee;
-  padding-bottom: 8px;
-  margin-bottom: 15px;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 /* Grid for names: 4 columns */
 .names-list-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 12px 20px; /* row gap | column gap */
+  gap: 6px 15px; /* row gap | column gap */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -3106,7 +3106,7 @@ section,
 .names-list-grid li {
   font-size: 0.70rem;
   color: #ffffff;
-  padding: 6px 8px;
+  padding: 4px 6px;
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.05); /* subtle highlight for each name */
   text-align: left;
