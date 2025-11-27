@@ -3054,9 +3054,10 @@ section,
   padding-bottom: 40px;
 }
 
-/* Photo styling */
+/* Photo styling (slightly reduced width so names have more room) */
 .people-photo {
   max-height: 300px;
+  width: 100%;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -3064,12 +3065,12 @@ section,
 
 /* Names container */
 .names-container {
-  background: #0A093A;
-  padding: 25px 35px;          /* slightly wider to fit 4 cols */
+  background: #0E1A40;        /* recommended midnight blue (change if you like) */
+  padding: 22px 28px;
   border-radius: 12px;
   border-left: 5px solid var(--accent-color, #4154f1);
-  width: 100%;                 /* maximize width */
-  box-sizing: border-box;      /* prevents overflowing past border */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Title inside names */
@@ -3078,31 +3079,38 @@ section,
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 1.2rem;
-  border-bottom: 2px solid #eee;
+  font-size: 1.05rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
   padding-bottom: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
-/* 4-column name list */
+/* 4-column name list with responsive fallbacks */
 .names-list-4col {
   list-style: none;
   padding-left: 0;
   margin: 0;
-  columns: 4;                 /* <-- NOW 4 COLUMNS */
-  column-gap: 35px;           /* spacing between columns */
+  columns: 4;              /* 4 columns on wide screens */
+  column-gap: 36px;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
 }
 
+/* Make sure items don't break across columns awkwardly */
 .names-list-4col li {
-  margin-bottom: 6px;
-  font-size: 0.95rem;
-  color: #444;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.96rem;
+  color: #e6eef8;          /* light, readable on dark bg */
+  line-height: 1.3;
 }
 
 /* Hover effect */
 .names-list-4col li:hover {
-  color: #ff8800;
-  font-weight: 500;
-  transition: 0.2s;
+  color: var(--accent-color, #ffb86b);  /* subtle warm accent on hover */
+  font-weight: 600;
+  transition: color 0.18s ease, font-weight 0.18s ease;
 }
-
