@@ -3056,7 +3056,7 @@ section,
 
 /* Photo styling */
 .people-photo {
-  max-height: 300px;
+  height: 350px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -3095,7 +3095,7 @@ section,
 }
 
 .names-list-grid li {
-  font-size: 0.80rem;
+  font-size: 0.70rem;
   color: #ffffff;
   padding: 6px 8px;
   border-radius: 4px;
