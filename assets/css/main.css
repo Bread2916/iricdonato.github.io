@@ -721,7 +721,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 20px 0;
   scroll-margin-top: 100px;
   overflow: clip;
 }
@@ -739,7 +739,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   position: relative;
 }
 
@@ -748,7 +748,7 @@ section,
   font-weight: 400;
   line-height: 1.2;
   color: var(--heading-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: 16px;
   letter-spacing: -1px;
 }
 
@@ -3033,21 +3033,18 @@ section,
   }
 }
 
-   /* ======== BUTTS ================================================== */
+/* ======== BUTTON NAV ================================================== */
 .button-nav-container {
-  position: relative; /* or remove entirely */
-  bottom: auto;       /* remove bottom positioning */
-  left: auto;
-  right: auto;
+  position: fixed;     /* fixes it to the screen */
+  bottom: 20px;        /* distance from bottom */
+  right: 20px;         /* distance from right */
   display: flex;
-  justify-content: space-between;
-  padding: 0 40px;   /* keeps gap from edges */
-  margin-top: 24px;  /* space from cards above */
-  z-index: auto;
+  gap: 10px;           /* space between buttons */
+  z-index: 9999;       /* stays on top */
 }
 
 .button-nav-container .btn {
-  min-width: 100px;         /* optional: make buttons uniform size */
+  min-width: 100px;
 }
 
 /* =========== MY BATCHMATES ============ */
