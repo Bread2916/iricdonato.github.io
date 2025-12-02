@@ -3142,3 +3142,10 @@ section,
   display: flex;       /* optional: flex layout */
   flex-direction: column;  /* stack children vertically */
 }
+
+  /* Make main take available height so buttons can sit near bottom */
+.main-container > main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
