@@ -72,6 +72,10 @@ window.addEventListener('wheel', function(e) {
 }
 
 body {
+    overflow: hidden;
+}
+
+body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
@@ -185,16 +189,11 @@ h6 {
 }
 
 html, body {
+    overflow: hidden !important;
     height: 100% !important;
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-}
-
-  .page-wrapper {
-  height: 100vh;
-  overflow: visible;      /* no scroll for main content */
-  position: relative;
 }
 
 #hero {
@@ -722,7 +721,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  padding: 60px 0;
   scroll-margin-top: 100px;
   overflow: clip;
 }
@@ -740,7 +739,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   position: relative;
 }
 
@@ -749,7 +748,7 @@ section,
   font-weight: 400;
   line-height: 1.2;
   color: var(--heading-color);
-  margin-bottom: 16px;
+  margin-bottom: 1.5rem;
   letter-spacing: -1px;
 }
 
@@ -772,7 +771,8 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding: 20px 0;
+  padding: 80px 0;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -909,7 +909,7 @@ section,
 
 .hero .hero-image .image-wrapper {
   position: relative;
-  max-width: 300px;
+  max-width: 450px;
   margin: 0 auto;
 }
 
@@ -3033,19 +3033,20 @@ section,
   }
 }
 
-/* ======== BUTTSSSS ================================================== */
+   /* ======== BUTTS ================================================== */
 .button-nav-container {
-  position: fixed;     /* fixes it to the screen */
-  bottom: 20px;        /* distance from bottom */
-  right: 20px;         /* distance from right */
-  left: auto !important;
-  display: flex;
-  gap: 10px;           /* space between buttons */
-  z-index: 9999;       /* stays on top */
+  position: fixed;       /* Fix position relative to viewport */
+  bottom: 20px;          /* Distance from bottom */
+  right: 20px;           /* Distance from right */
+  display: flex;         /* Arrange buttons in a row */
+  gap: 10px;             /* Space between buttons */
+  z-index: 1000;         /* Make sure it’s on top */
+  justify-content: flex-end; /* Align buttons to the right */
+  width: auto;           /* Adjust width to content */
 }
 
 .button-nav-container .btn {
-  min-width: 100px;
+  min-width: 100px;         /* optional: make buttons uniform size */
 }
 
 /* =========== MY BATCHMATES ============ */
@@ -3119,14 +3120,4 @@ section,
   color: #4a8ad4;
   font-weight: 500;
   transition: 0.2s;
-}
-
-  /* ONE BIG CONTAINERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR*/
-.page-container {
-  height: 100vh;        /* Exactly one viewport height */
-  width: 100vw;         /* Exactly one viewport width */
-  overflow: hidden;     /* No scrolling */
-  position: relative;   /* For internal positioning */
-  display: flex;
-  flex-direction: column;
 }
