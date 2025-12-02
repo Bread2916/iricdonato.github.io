@@ -72,10 +72,6 @@ window.addEventListener('wheel', function(e) {
 }
 
 body {
-    overflow: hidden;
-}
-
-body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
@@ -189,11 +185,16 @@ h6 {
 }
 
 html, body {
-    overflow: hidden !important;
     height: 100% !important;
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
+}
+
+  .page-wrapper {
+  height: 100vh;
+  overflow: hidden;      /* no scroll for main content */
+  position: relative;
 }
 
 #hero {
