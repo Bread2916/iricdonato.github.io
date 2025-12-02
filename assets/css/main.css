@@ -913,9 +913,9 @@ section,
 }
 
 .hero .hero-image .image-wrapper img {
-  width: 100%;
-  height: 300px; /* or fixed height */
-  object-fit: cover; /* crop or fit to maintain aspect ratio */
+  border-radius: 20px;
+  box-shadow: 0 5px 15px color-mix(in srgb, var(--default-color), transparent 95%);
+  transition: transform 0.3s ease;
 }
 
 .hero .hero-image .image-wrapper img:hover {
@@ -991,7 +991,6 @@ section,
     margin-bottom: 3rem;
   }
 }
-
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
