@@ -3121,3 +3121,14 @@ section,
   font-weight: 500;
   transition: 0.2s;
 }
+
+  /* ============= ONE BIIIIIG CONTAINER ================== */
+  .main-container {
+  min-height: 100vh;   /* full viewport height */
+  width: 100vw;        /* full viewport width */
+  max-width: 100%;     /* prevent horizontal overflow */
+  margin: 0 auto;      /* center horizontally if needed */
+  padding: 0;          /* remove default padding */
+  display: flex;       /* optional: flex layout */
+  flex-direction: column;  /* stack children vertically */
+}
