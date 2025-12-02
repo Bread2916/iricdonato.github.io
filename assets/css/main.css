@@ -771,8 +771,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding: 80px 0;
-  min-height: 100vh;
+  padding: 20px 0;
   display: flex;
   align-items: center;
 }
@@ -3033,7 +3032,7 @@ section,
   }
 }
 
-/* ======== BUTTON NAV ================================================== */
+/* ======== BUTTSSSS ================================================== */
 .button-nav-container {
   position: fixed;     /* fixes it to the screen */
   bottom: 20px;        /* distance from bottom */
@@ -3118,14 +3117,4 @@ section,
   color: #4a8ad4;
   font-weight: 500;
   transition: 0.2s;
-}
-
-  /* ================== MAKE BUTTONS BOTTOM RIGHT ============================== */
-  .button-container {
-  position: fixed;
-  bottom: 20px; /* distance from bottom */
-  right: 20px;  /* distance from right */
-  display: flex;
-  gap: 10px; /* space between buttons */
-  z-index: 1000; /* on top */
 }
