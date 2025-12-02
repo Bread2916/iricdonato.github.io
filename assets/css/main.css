@@ -2941,12 +2941,13 @@ section,
   align-items: flex-start;
   flex-wrap: nowrap;        /* prevent cards from wrapping */
   overflow-x: auto;         /* allow horizontal scroll on narrow viewports */
-  padding-bottom: 8px;
+  padding-bottom: 0px;
 }
 
 /* ====== Portfolio Card: side-by-side image + text ====== */
 .portfolio-card {
   display: flex;
+  margin-bottom: 0 !important;
   flex-direction: row;       /* image left, text right */
   gap: 16px;                 /* space between image and text */
   align-items: center;
@@ -2957,6 +2958,15 @@ section,
   min-width: 380px;          /* keeps layout stable */
   box-sizing: border-box;
   overflow: hidden;
+}
+ 
+.portfolio-layout,  /* removes gaps */
+.portfolio-container {
+  gap: 0 !important;
+}
+
+[data-aos] {
+  margin-bottom: 0 !important;
 }
 
 /* Image column: fixed size, does not shrink */
