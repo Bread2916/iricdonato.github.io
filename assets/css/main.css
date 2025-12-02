@@ -3120,3 +3120,13 @@ section,
   font-weight: 500;
   transition: 0.2s;
 }
+
+  /* ONE BIG CONTAINERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR*/
+.page-container {
+  height: 100vh;        /* Exactly one viewport height */
+  width: 100vw;         /* Exactly one viewport width */
+  overflow: hidden;     /* No scrolling */
+  position: relative;   /* For internal positioning */
+  display: flex;
+  flex-direction: column;
+}
