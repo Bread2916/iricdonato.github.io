@@ -913,7 +913,7 @@ section,
 }
 
 .hero .hero-image .image-wrapper img {
-  border-radius: 0px;
+  border-radius: 20px;
   box-shadow: 0 5px 15px color-mix(in srgb, var(--default-color), transparent 95%);
   transition: transform 0.3s ease;
 }
@@ -934,8 +934,8 @@ section,
 .hero .hero-image .floating-elements .floating-card {
   position: absolute;
   background: var(--surface-color);
-  padding: 0px 0px;
-  border-radius: 0px;
+  padding: 15px 20px;
+  border-radius: 15px;
   box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 90%);
   display: flex;
   align-items: center;
@@ -3120,4 +3120,3 @@ section,
   font-weight: 500;
   transition: 0.2s;
 }
-
