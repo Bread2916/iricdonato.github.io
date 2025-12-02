@@ -3034,15 +3034,14 @@ section,
 
    /* ======== BUTTS ================================================== */
 .button-nav-container {
-  position: relative; /* or remove entirely */
-  bottom: auto;       /* remove bottom positioning */
-  left: auto;
-  right: auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 40px;   /* keeps gap from edges */
-  margin-top: 24px;  /* space from cards above */
-  z-index: auto;
+  position: fixed;       /* Fix position relative to viewport */
+  bottom: 20px;          /* Distance from bottom */
+  right: 20px;           /* Distance from right */
+  display: flex;         /* Arrange buttons in a row */
+  gap: 10px;             /* Space between buttons */
+  z-index: 1000;         /* Make sure it’s on top */
+  justify-content: flex-end; /* Align buttons to the right */
+  width: auto;           /* Adjust width to content */
 }
 
 .button-nav-container .btn {
@@ -3122,12 +3121,3 @@ section,
   transition: 0.2s;
 }
 
-  /* ================== MAKE BUTTONS BOTTOM RIGHT ============================== */
-  .button-container {
-  position: fixed;
-  bottom: 20px; /* distance from bottom */
-  right: 20px;  /* distance from right */
-  display: flex;
-  gap: 10px; /* space between buttons */
-  z-index: 1000; /* on top */
-}
