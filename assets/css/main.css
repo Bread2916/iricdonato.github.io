@@ -1622,7 +1622,7 @@ section,
   display: flex;
   background-color: var(--surface-color);
   border-radius: 12px;
-  padding: 2rem;
+  padding: 0px;
   height: 100%;
   position: relative;
   overflow: hidden;
