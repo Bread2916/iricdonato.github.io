@@ -3034,14 +3034,11 @@ section,
 
    /* ======== BUTTS ================================================== */
 .button-nav-container {
-  position: fixed;       /* Fix position relative to viewport */
-  bottom: 20px;          /* Distance from bottom */
-  right: 20px;           /* Distance from right */
-  display: flex;         /* Arrange buttons in a row */
-  gap: 10px;             /* Space between buttons */
-  z-index: 1000;         /* Make sure it’s on top */
-  justify-content: flex-end; /* Align buttons to the right */
-  width: auto;           /* Adjust width to content */
+  position: relative; 
+  margin-top: 20px;           /* space from the container above */
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;  /* align buttons to the right */
 }
 
 .button-nav-container .btn {
