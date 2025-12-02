@@ -70,13 +70,7 @@ window.addEventListener('wheel', function(e) {
 .services-small .container {
     max-width: 900px; /* default is around 1140px */
 }
-  
-body {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin: 0 !important;
-}
-  
+
 body {
     overflow: hidden;
 }
@@ -143,7 +137,7 @@ h6 {
   background: #df1529;
   color: #ffffff;
   text-align: left;
-  padding: 0px;
+  padding: 15px;
   margin-bottom: 24px;
   font-weight: 600;
 }
@@ -153,7 +147,7 @@ h6 {
   color: #ffffff;
   background: #059652;
   text-align: center;
-  padding: 0px;
+  padding: 15px;
   margin-bottom: 24px;
   font-weight: 600;
 }
@@ -162,7 +156,7 @@ h6 {
   display: none;
   background: var(--surface-color);
   text-align: center;
-  padding: 0px;
+  padding: 15px;
   margin-bottom: 24px;
 }
 
@@ -219,7 +213,7 @@ html, body {
   --background-color: rgba(255, 255, 255, 0);
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 10px 0;
+  padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
@@ -242,7 +236,7 @@ html, body {
 }
 
 .header .header-social-links {
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 .header .header-social-links a {
@@ -549,7 +543,7 @@ html, body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
-  padding: 0px 0;
+  padding: 40px 0;
   position: relative;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
 }
@@ -685,7 +679,7 @@ html, body {
 }
 
 .page-title .heading {
-  padding: 0px 0;
+  padding: 80px 0;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
@@ -727,7 +721,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 0px 0;
+  padding: 60px 0;
   scroll-margin-top: 100px;
   overflow: clip;
 }
@@ -745,7 +739,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 60px;
   position: relative;
 }
 
@@ -777,7 +771,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding: 10px 0;
+  padding: 80px 0;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -920,9 +914,9 @@ section,
 }
 
 .hero .hero-image .image-wrapper img {
-  width: 100%;
-  height: 400px; /* or fixed height */
-  object-fit: cover; /* crop or fit to maintain aspect ratio */
+  border-radius: 20px;
+  box-shadow: 0 5px 15px color-mix(in srgb, var(--default-color), transparent 95%);
+  transition: transform 0.3s ease;
 }
 
 .hero .hero-image .image-wrapper img:hover {
@@ -941,7 +935,7 @@ section,
 .hero .hero-image .floating-elements .floating-card {
   position: absolute;
   background: var(--surface-color);
-  padding: 5px 10px;
+  padding: 15px 20px;
   border-radius: 15px;
   box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 90%);
   display: flex;
@@ -1043,7 +1037,7 @@ section,
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 4px 8px;
+  padding: 12px 18px;
   border-radius: 6px;
   color: var(--accent-color);
   background: color-mix(in srgb, var(--accent-color), transparent 92%);
@@ -1130,7 +1124,7 @@ section,
 }
 
 .about .skill-item {
-  padding: 4px;
+  padding: 24px;
   border-radius: 6px;
   transition: 0.3s ease-in-out;
   background: color-mix(in srgb, var(--surface-color), var(--accent-color) 2%);
@@ -1170,7 +1164,7 @@ section,
   align-items: center;
   min-height: 180px; /* Adjust based on the tallest timeline block */
   justify-content: flex-start;
-  padding-left: 4px;
+  padding-left: 26px;
 }
 
 .about .timeline-item .dot {
@@ -1213,7 +1207,7 @@ section,
 }
 
 .about .personal-quote {
-  padding: 0px 0;
+  padding: 24px 0;
 }
 
 .about .personal-quote p {
@@ -1231,7 +1225,7 @@ section,
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 0px 0px;
+  padding: 10px 14px;
   border-radius: 999px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   background: var(--surface-color);
@@ -1383,7 +1377,7 @@ section,
 
 @media (max-width: 576px) {
   .stats {
-    padding: 0px 0;
+    padding: 60px 0;
   }
 
   .stats .avatars {
@@ -1406,7 +1400,7 @@ section,
 
 .testimonials .testimonial-item .testimonial-content {
   border-left: 3px solid var(--accent-color);
-  padding-left: 0px;
+  padding-left: 30px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1487,8 +1481,8 @@ section,
 .resume .resume-item .resume-title {
   font-size: 1.75rem;
   font-weight: 700;
-  margin-bottom: 12px;
-  padding-bottom: 12px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
   position: relative;
   color: var(--heading-color);
 }
@@ -1628,7 +1622,7 @@ section,
   display: flex;
   background-color: var(--surface-color);
   border-radius: 12px;
-  padding: 0px;
+  padding: 2rem;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -2059,7 +2053,7 @@ section,
 
 .service-details .overview-card .overview-details {
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  padding-top: 8px;
+  padding-top: 1.5rem;
 }
 
 .service-details .overview-card .overview-details .detail-row {
@@ -2130,7 +2124,7 @@ section,
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  padding-top: 12px;
+  padding-top: 1.5rem;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
@@ -2177,7 +2171,7 @@ section,
 
 .service-details .consultation-form .form-input {
   width: 100%;
-  padding: 4px;
+  padding: 1rem;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-radius: 4px;
   font-size: 0.95rem;
@@ -2222,7 +2216,7 @@ section,
   background: var(--accent-color);
   color: var(--contrast-color);
   border: none;
-  padding: 0px 0px;
+  padding: 1rem 2rem;
   border-radius: 4px;
   font-size: 0.95rem;
   font-weight: 500;
@@ -2267,7 +2261,7 @@ section,
   }
 
   .service-details .timeline-section .timeline .timeline-item {
-    padding-left: 12px;
+    padding-left: 60px;
   }
 
   .service-details .timeline-section .timeline .timeline-item .timeline-marker {
@@ -2385,7 +2379,7 @@ section,
 }
 
 .portfolio .portfolio-card .portfolio-info {
-  padding: 8px;
+  padding: 20px;
 }
 
 .portfolio .portfolio-card .portfolio-info h4 {
@@ -2419,7 +2413,7 @@ section,
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   color: var(--contrast-color);
-  padding: 4px 12px;
+  padding: 12px 30px;
   font-weight: 600;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -2615,7 +2609,7 @@ section,
 }
 
 .portfolio-details .portfolio-details-content .project-overview .project-accordion .accordion-item .accordion-header .accordion-button {
-  padding: 8px;
+  padding: 1rem;
   font-weight: 600;
   font-size: 1rem;
   color: var(--heading-color);
@@ -2647,7 +2641,7 @@ section,
 }
 
 .portfolio-details .portfolio-details-content .project-overview .project-accordion .accordion-item .accordion-body {
-  padding: 8px;
+  padding: 1rem;
   background-color: var(--surface-color);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -2703,7 +2697,7 @@ section,
 }
 
 .portfolio-details .portfolio-details-content .cta-buttons .btn-view-project {
-  padding: 4px 8px;
+  padding: 12px 28px;
   background-color: var(--accent-color);
   color: var(--contrast-color);
   border-radius: 30px;
@@ -2718,7 +2712,7 @@ section,
 }
 
 .portfolio-details .portfolio-details-content .cta-buttons .btn-next-project {
-  padding: 4px 12px;
+  padding: 12px 28px;
   background-color: color-mix(in srgb, var(--heading-color), transparent 90%);
   color: var(--heading-color);
   border-radius: 30px;
@@ -2947,32 +2941,22 @@ section,
   align-items: flex-start;
   flex-wrap: nowrap;        /* prevent cards from wrapping */
   overflow-x: auto;         /* allow horizontal scroll on narrow viewports */
-  padding-bottom: 0px;
+  padding-bottom: 8px;
 }
 
 /* ====== Portfolio Card: side-by-side image + text ====== */
 .portfolio-card {
   display: flex;
-  margin-bottom: 0 !important;
   flex-direction: row;       /* image left, text right */
   gap: 16px;                 /* space between image and text */
   align-items: center;
   background: #f8f8f8;
-  padding: 4px;
+  padding: 16px;
   border-radius: 12px;
   max-width: 520px;          /* overall card width */
   min-width: 380px;          /* keeps layout stable */
   box-sizing: border-box;
   overflow: hidden;
-}
- 
-.portfolio-layout,  /* removes gaps */
-.portfolio-container {
-  gap: 0 !important;
-}
-
-[data-aos] {
-  margin-bottom: 0 !important;
 }
 
 /* Image column: fixed size, does not shrink */
@@ -3051,14 +3035,15 @@ section,
 
    /* ======== BUTTS ================================================== */
 .button-nav-container {
-  position: fixed;       /* Fix position relative to viewport */
-  bottom: 20px;          /* Distance from bottom */
-  right: 20px;           /* Distance from right */
-  display: flex;         /* Arrange buttons in a row */
-  gap: 10px;             /* Space between buttons */
-  z-index: 1000;         /* Make sure it’s on top */
-  justify-content: flex-end; /* Align buttons to the right */
-  width: auto;           /* Adjust width to content */
+  position: relative; /* or remove entirely */
+  bottom: auto;       /* remove bottom positioning */
+  left: auto;
+  right: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;   /* keeps gap from edges */
+  margin-top: 24px;  /* space from cards above */
+  z-index: auto;
 }
 
 .button-nav-container .btn {
@@ -3069,7 +3054,7 @@ section,
 
 /* Reduce gap between section title and names container */
 .section-title {
-  margin-bottom: 0px; /* default might be 30px or more */
+  margin-bottom: 5px; /* default might be 30px or more */
 }
 
 .names-container {
@@ -3078,8 +3063,8 @@ section,
   
 /* Page layout spacing */
 .people-layout {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* Photo styling */
@@ -3094,7 +3079,7 @@ section,
 .names-container {
   background: rgba(0, 123, 255, 0.1); /* subtle blue tint */
   width: 100%;       /* container fills column width */
-  padding: 0px 0px;
+  padding: 15px 20px;
   border-radius: 12px;
   border-left: 5px solid var(--accent-color, #4154f1); /* blue accent border */
   box-sizing: border-box;
@@ -3109,7 +3094,7 @@ section,
   font-size: 1.2rem;
   border-bottom: 2px solid #eee;
   padding-bottom: 4px;
-  margin-bottom: 0px;
+  margin-bottom: 8px;
 }
 
 /* Grid for names: 4 columns */
@@ -3125,7 +3110,7 @@ section,
 .names-list-grid li {
   font-size: 0.70rem;
   color: #ffffff;
-  padding: 0px 0px;
+  padding: 4px 6px;
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.05); /* subtle highlight for each name */
   text-align: left;
@@ -3138,20 +3123,12 @@ section,
   transition: 0.2s;
 }
 
-  /* ============= ONE BIIIIIG CONTAINER ================== */
-  .main-container {
-  min-height: 100vh;   /* full viewport height */
-  width: 100vw;        /* full viewport width */
-  max-width: 100%;     /* prevent horizontal overflow */
-  margin: 0 auto;      /* center horizontally if needed */
-  padding: 0;          /* remove default padding */
-  display: flex;       /* optional: flex layout */
-  flex-direction: column;  /* stack children vertically */
-}
-
-  /* Make main take available height so buttons can sit near bottom */
-.main-container > main {
-  flex: 1;
+  /* ================== MAKE BUTTONS BOTTOM RIGHT ============================== */
+  .button-container {
+  position: fixed;
+  bottom: 20px; /* distance from bottom */
+  right: 20px;  /* distance from right */
   display: flex;
-  flex-direction: column;
+  gap: 10px; /* space between buttons */
+  z-index: 1000; /* on top */
 }
