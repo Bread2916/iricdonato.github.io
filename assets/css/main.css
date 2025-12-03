@@ -3036,7 +3036,7 @@ section,
    /* ======== BUTTS ================================================== */
 .button-nav-container {
   position: fixed;       /* Fix position relative to viewport */
-  bottom: 20px;          /* Distance from bottom */
+  bottom: 60px;          /* Distance from bottom */
   right: 20px;           /* Distance from right */
   display: flex;         /* Arrange buttons in a row */
   gap: 10px;             /* Space between buttons */
